@@ -27,7 +27,7 @@ header {
     border-radius: 8px;
 }
 
-#logoWaterDropBox img{
+#logoWaterDropBox img {
     padding-left: 8px;
     padding-top: 7px;
 }
@@ -37,9 +37,10 @@ header {
     padding-top: 9px;
     font-family: Inter, sans-serif;
     font-weight: bold;
+    font-size: 20px;
 }
 
-#logoText div{
+#logoText div {
     color: #0866C2;
 }
 
@@ -48,6 +49,7 @@ header {
     gap: 80px;
     margin-top: 7px;
     list-style-type: none;
+    padding: 0;
 }
 
 .nav a {
@@ -73,3 +75,39 @@ button {
 button:hover {
     background-color: #c44100;
 }
+
+.nav-select {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #DCE5EC;
+        border-radius: 8px;
+        width: 320px;
+    }
+
+    button {
+        width: 100%;
+    }
+}   
