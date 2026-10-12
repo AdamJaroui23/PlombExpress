@@ -1,43 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    font-family: Inter, sans-serif;
 }
 
 header {
     display: flex;
-    gap: 300px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
     margin-top: 20px;
-    padding-left: 80px;
-    padding-bottom: 10px;
+    padding: 0 32px 10px 80px;
     width: 100%;
-    border: 1px solid #DCE5EC;
-    border-left: transparent;
-    border-top: transparent;
-    border-right: transparent;
+    border-bottom: 1px solid #DCE5EC;
 }
 
 .logo {
     display: flex;
+    align-items: center;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 #logoWaterDropBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #0866C2;
-    height: 32px;
-    width: 32px;
-    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    flex-shrink: 0;
 }
 
 #logoWaterDropBox img {
-    padding-left: 8px;
-    padding-top: 7px;
+    width: 20px;
+    height: 20px;
 }
 
 #logoText {
     display: flex;
-    padding-top: 9px;
-    font-family: Inter, sans-serif;
+    padding-top: 0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    white-space: nowrap;
 }
 
 #logoText div {
@@ -46,7 +55,8 @@ header {
 
 .nav {
     display: flex;
-    gap: 80px;
+    align-items: center;
+    gap: 40px;
     margin-top: 7px;
     list-style-type: none;
     padding: 0;
@@ -54,7 +64,6 @@ header {
 
 .nav a {
     color: black;
-    font-family: Inter, sans-serif;
     text-decoration: none;
 }
 
@@ -63,16 +72,18 @@ header {
     border-bottom: 3px solid #2563eb;
 }
 
-button {
+.header-button button {
     background-color: #FF6418;
     height: 44px;
     width: 171px;
     border: none;
     border-radius: 10px;
     color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-button:hover {
+.header-button button:hover {
     background-color: #c44100;
 }
 
@@ -80,17 +91,138 @@ button:hover {
     display: none;
 }
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F3F7FA;
+}
+
+#hero-box {
+    display: flex;
+    gap: 200px;
+    width: 100%;
+    min-width: 0;
+    padding: 24px;
+    padding-top: 0px;
+    margin-left: 50px;
+}
+
+#miniText {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #0866C2;
+}
+
+#miniText img {
+    height: 18px;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+#mainText {
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 500px;
+    color: #102A43;
+}
+
+#mainText div {
+    width: 375px;
+}
+
+#parag {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #486176;
+    width: 500px;
+    font-size: 18px;
+}
+#heroImg {
+    margin-top: 50px;
+}
+
+#heroImg img{
+    width: 588px;
+    height: 464px;
+    border-radius: 20px;
+}
+
+#heroButtons {
+    display: flex;
+    width: 348px;
+    margin-left: 40px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#heroButtons button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: Inter, sans-serif;
+    height: 58px;
+    width: 250px;
+}
+
+#heroButtons #button1{
+    background-color: #FF6418;
+    color: white;
+}
+
+#heroButtons #button1:hover{
+    background-color: #c44100;
+}
+
+#heroButtons #button2{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #DCE5EC;
+}
+
+#heroButtons #button2:hover{
+    background-color: #757575;
+    border: 1px solid #DCE5EC;
+}
+
 @media (max-width: 768px) {
+
     header {
         flex-wrap: wrap;
-        gap: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 15px;
+        padding: 10px 24px 12px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    #logoWaterDropBox {
+        height: 40px;
+        width: 40px;
+    }
+
+    #logoText {
+        font-size: 24px;
     }
 
     nav {
         order: 3;
         width: 100%;
+        min-width: 0;
     }
 
     .nav {
@@ -100,14 +232,64 @@ button:hover {
     .nav-select {
         display: block;
         width: 100%;
-        padding: 10px;
+        padding: 12px;
         font-size: 16px;
         border: 1px solid #DCE5EC;
         border-radius: 8px;
-        width: 320px;
+        background-color: white;
     }
 
-    button {
+    .header-button {
+        margin-left: auto;
+    }
+
+    .header-button button {
+        width: auto;
+        height: 44px;
+        padding: 0 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .hero {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #hero-box {
+        width: 100%;
+        padding: 24px;
+    }
+
+    #miniText {
+        gap: 12px;
+        margin: 50px 0 0;
+        font-size: 16px;
+    }
+
+    #miniText img {
+        width: 18px;
+        height: 18px;
+    }
+
+    #mainText {
+        width: 100%;
+        margin: 50px 0 0;
+        font-size: clamp(36px, 8vw, 50px);
+        line-height: 1.2;
+        overflow-wrap: break-word;
+    }
+
+    #mainText div {
         width: 100%;
     }
-}   
+
+    #parag {
+        width: 100%;
+        margin: 48px 0 0;
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+}
