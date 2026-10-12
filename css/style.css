@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    gap: 300px;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: 1px solid #DCE5EC;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+#logoWaterDropBox {
+    background-color: #0866C2;
+    height: 32px;
+    width: 32px;
+    border-radius: 8px;
+}
+
+#logoWaterDropBox img{
+    padding-left: 8px;
+    padding-top: 7px;
+}
+
+#logoText {
+    display: flex;
+    padding-top: 9px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+}
+
+#logoText div{
+    color: #0866C2;
+}
+
+.nav {
+    display: flex;
+    gap: 80px;
+    margin-top: 7px;
+    list-style-type: none;
+}
+
+.nav a {
+    color: black;
+    font-family: Inter, sans-serif;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+button {
+    background-color: #FF6418;
+    height: 44px;
+    width: 171px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: #c44100;
+}
