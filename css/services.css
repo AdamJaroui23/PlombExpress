@@ -90,3 +90,319 @@ header {
 .nav-select {
     display: none;
 }
+
+.hero {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F3F7FA;
+}
+
+#hero-box {
+    display: flex;
+    gap: 200px;
+    width: 100%;
+    padding: 24px;
+    padding-top: 0px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#mainText {
+    font-size: 28.8px;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 100%;
+    color: #102A43;
+}
+
+#mainText div {
+    width: 100%;
+}
+
+#parag {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #486176;
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#parag2 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #000000;
+    width: 500px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#heroImg {
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+}
+
+#heroImg img {
+    width: 588px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+#heroButtons {
+    display: flex;
+    width: 348px;
+    margin-left: 40px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#heroButtons button {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: Inter, sans-serif;
+    height: 58px;
+    width: 250px;
+}
+
+#heroButtons #button1 {
+    background-color: #FF6418;
+    color: white;
+}
+
+#heroButtons #button1:hover {
+    background-color: #c44100;
+}
+
+#heroButtons #button2 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #DCE5EC;
+}
+
+#heroButtons #button2:hover {
+    background-color: #757575;
+    border: 1px solid #DCE5EC;
+}
+
+#heroBottom {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    border-top: 2px solid #DCE5EC;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    height: 150px;
+    padding-top: 20px;
+    width: 1369px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 24px;
+}
+
+.circle {
+    display: flex;
+    height: 36px;
+    width: 36px;
+    background-color: #E7F1FB;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    height: 20px;
+    width: 20px;
+}
+
+#heroBottom>div {
+    display: flex;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 15px;
+        padding: 10px 24px 12px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    #logoWaterDropBox {
+        height: 40px;
+        width: 40px;
+    }
+
+    #logoText {
+        font-size: 24px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-select {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #DCE5EC;
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    .header-button {
+        margin-left: auto;
+    }
+
+    .header-button button {
+        width: auto;
+        height: 44px;
+        padding: 0 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hero-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0 16px 32px;
+        gap: 20px;
+        overflow: visible;
+    }
+
+    #hero-box>div {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #mainText {
+        width: 100%;
+        margin: 30px 0 0;
+        font-size: clamp(36px, 8vw, 50px);
+        line-height: 1.2;
+        overflow-wrap: break-word;
+    }
+
+    #mainText div {
+        width: 100%;
+    }
+
+    #parag {
+        width: 100%;
+        margin: 24px 0 0;
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+
+    #parag2 {
+        width: 100%;
+        margin-left: 0px;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-right: 0px;
+    }
+
+    #heroImg {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #heroImg img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    #heroButtons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30px 0 0;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    #heroButtons button {
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        font-family: Inter, sans-serif;
+        height: 58px;
+        width: 100%;
+    }
+
+    #heroButtons #button1 {
+        background-color: #FF6418;
+        color: white;
+    }
+
+    #heroButtons #button2 {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: 1px solid #DCE5EC;
+    }
+
+    #heroBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 24px 16px 0;
+        height: auto;
+        border-top: 2px solid #DCE5EC;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #hero-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
