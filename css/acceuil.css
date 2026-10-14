@@ -622,85 +622,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    footer {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 24px;
-        padding: 24px 12px 14px;
-    }
 
-    .footer-logo {
-        gap: 8px;
-        font-size: 14px;
-    }
-
-    .footer-logo>span {
-        width: 28px;
-        height: 28px;
-        border-radius: 7px;
-    }
-
-    .footer-logo img {
-        width: 16px;
-        height: 16px;
-    }
-
-    .footer-brand>p {
-        margin: 12px 0;
-        font-size: 11px;
-        line-height: 1.5;
-    }
-
-    .footer-social {
-        gap: 8px;
-    }
-
-    .footer-social>a {
-        width: 24px;
-        height: 24px;
-        flex-basis: 24px;
-        border-radius: 6px;
-    }
-
-    .footer-social svg {
-        width: 14px;
-        height: 14px;
-    }
-
-    .footer-column {
-        gap: 8px;
-    }
-
-    .footer-column h2 {
-        margin: 0 0 2px;
-        font-size: 11px;
-    }
-
-    .footer-column a,
-    .footer-column p,
-    .footer-bottom a,
-    .footer-bottom p {
-        font-size: 10px;
-        line-height: 1.5;
-    }
-
-    .footer-contact {
-        gap: 8px;
-    }
-
-    .footer-contact small {
-        font-size: 9px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 8px;
-        margin-top: 0;
-        padding-top: 12px;
-    }
-
-    .footer-bottom>div {
-        gap: 16px;
-    }
 
     header {
         flex-wrap: wrap;
@@ -974,6 +896,86 @@ footer {
     .article-content>section {
         order: 3;
         margin-top: 20px;
+    }
+
+    footer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        padding: 24px 12px 14px;
+    }
+
+    .footer-logo {
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .footer-logo>span {
+        width: 28px;
+        height: 28px;
+        border-radius: 7px;
+    }
+
+    .footer-logo img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer-brand>p {
+        margin: 12px 0;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .footer-social {
+        gap: 8px;
+    }
+
+    .footer-social>a {
+        width: 24px;
+        height: 24px;
+        flex-basis: 24px;
+        border-radius: 6px;
+    }
+
+    .footer-social svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .footer-column {
+        gap: 8px;
+    }
+
+    .footer-column h2 {
+        margin: 0 0 2px;
+        font-size: 11px;
+    }
+
+    .footer-column a,
+    .footer-column p,
+    .footer-bottom a,
+    .footer-bottom p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .footer-contact {
+        gap: 8px;
+    }
+
+    .footer-contact small {
+        font-size: 9px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 0;
+        padding-top: 12px;
+    }
+
+    .footer-bottom>div {
+        gap: 16px;
     }
 
 }
