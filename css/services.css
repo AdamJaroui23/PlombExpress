@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 0 32px 10px 80px;
+    width: 100%;
+    border-bottom: 1px solid #DCE5EC;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+#logoWaterDropBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0866C2;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+#logoWaterDropBox img {
+    width: 20px;
+    height: 20px;
+}
+
+#logoText {
+    display: flex;
+    padding-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+#logoText div {
+    color: #0866C2;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 7px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+.header-button button {
+    background-color: #FF6418;
+    height: 44px;
+    width: 171px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-button button:hover {
+    background-color: #c44100;
+}
+
+.nav-select {
+    display: none;
+}
