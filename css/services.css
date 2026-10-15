@@ -337,6 +337,10 @@ main button:hover {
     background-color: #757575;
 }
 
+main a {
+    text-decoration: none;
+}
+
 main button img {
     height: 15px;
     width: 15px;

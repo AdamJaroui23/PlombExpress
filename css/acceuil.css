@@ -335,6 +335,9 @@ main button img {
     height: 15px;
     width: 15px;
 }
+main a {
+    text-decoration: none;
+}
 
 article>div>section {
     display: flex;
