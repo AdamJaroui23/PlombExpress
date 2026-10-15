@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div id="logoWaterDropBox">
+                <img src="assets/icons/water-drop-shape-outline.png" alt="A drop of water">
+            </div>
+
+            <div id="logoText">
+                Plomb'<div>Express</div>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="À-propos.html">À propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <select class="nav-select" onchange="window.location=this.value">
+                <option value="acceuil.html">Accueil</option>
+                <option value="services.html">Services</option>
+                <option value="À-propos.html">À propos</option>
+                <option value="contact.html" disabled selected>Contact</option>
+            </select>
+        </nav>
+
+        <div class="header-button">
+            <button>Demander un devis</button>
+        </div>
+        </div>
+    </header>
+
+    <address>
+        <strong>Plomb'Express</strong><br>
+        12 rue des Artisans, 69003 Lyon, France<br>
+        <a href="mailto:bonjour@plombexpress.example">bonjour@plombexpress.example</a><br>
+        <a href="tel:+33400000000">04 00 00 00 00</a>
+    </address>
+
+    <section class="horaire">
+        <table id="tableau-horaire">
+            <tr>
+                <th>Jour</th>
+                <th>Heures d'ouverture</th>
+            </tr>
+            <tr>
+                <td>Lundi</td>
+                <td>8h00 - 18h00</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>8h00 - 18h00</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>8h00 - 18h00</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>8h00 - 18h00</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>8h00 - 18h00</td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td>9h00 - 14h00</td>
+            </tr>
+            <tr>
+                <td>Dimanche</td>
+                <td>Fermé</td>
+            </tr>
+        </table>
+
+        <form>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel">
+
+            <label for="service">Service demandé :</label>
+            <select id="service" name="service" required>
+                <option value="">-- Choisir --</option>
+                <option value="depannage">Dépannage</option>
+                <option value="installation">Installation</option>
+                <option value="entretien">Entretien</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+
+        <footer>
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span><img src="assets/icons/water-drop-shape-outline.png" alt=""></span>
+                    <strong>Plomb'Express</strong>
+                </div>
+                <p>Votre partenaire plomberie pour un quotidien serein. Des artisans de proximité, un travail soigné et
+                    des
+                    engagements tenus.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Liens utiles</h2>
+                <a href="acceuil.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="À propos">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h2>Nos services</h2>
+                <a href="services.html">Dépannage plomberie</a>
+                <a href="services.html">Installation sanitaire</a>
+                <a href="services.html">Réparation de fuites</a>
+            </div>
+            <div class="footer-column footer-contact">
+                <h2>Contactez-nous</h2>
+                <a href="tel:+33400000000"><span aria-hidden="true">☎</span> 04 00 00 00 00</a>
+                <a href="mailto:bonjour@plombexpress.example"><span aria-hidden="true">✉</span>
+                    bonjour@plombexpress.example</a>
+                <p><span aria-hidden="true">●</span> 12 rue des Artisans<br>69003 Lyon, France</p>
+                <small>Coordonnées fictives — site de démonstration.</small>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Plomb'Express. Tous droits réservés.</p>
+                <div>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Confidentialité</a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
